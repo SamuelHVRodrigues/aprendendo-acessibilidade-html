@@ -97,9 +97,31 @@
                 </tbody>
             </table>
 
-            <img src="../acessibilidade-landmark/logo-got.jpg" alt="Logo Game of Thrones" title="Logo Game of Thrones" aria-labelledby="description-logo-got">
+            <img src="logo-got.jpg" alt="Logo Game of Thrones" title="Logo Game of Thrones" aria-labelledby="description-logo-got">
 
             <p id="description-logo-got">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure tenetur dolore fugiat fugit aspernatur facilis cum adipisci corrupti ducimus quia recusandae, facere labore sequi officia eligendi temporibus harum iste!</p>
+
+            <p id="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem eligendi ea tempora accusamus architecto voluptatum sequi quasi consequatur amet, commodi non soluta eius omnis unde, incidunt quaerat, rerum quis.</p>
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium laborum facere consectetur ipsa omnis at, neque dolore cumque perferendis reiciendis vitae ipsum id nesciunt quaerat? Commodi, eum earum. Veritatis, cupiditate.</p>
+            
+            <script type="text/javascript">
+                var paragrafo = document.getElementById("article-description");
+                paragrafo.style.color = "blue";
+                paragrafo.innerText = "Texto mudou!"
+            </script>
+
+            <p id="texto1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellat voluptate deserunt temporibus, ex repellendus necessitatibus, reiciendis fugit rerum fuga tempora ipsam. Eos architecto similique nemo, esse eligendi explicabo repellat?</p>
+
+            <button id="botao1" onclick="atualizacao()">Atualização de texto</button>
+
+            <script type="text/javascript">
+                function atualizacao() {
+                    var texto1 = document.getElementById("texto1");
+
+                    texto1.innerText = "Game of Thrones"
+                }
+            </script>
 
         </main>
     </body>
