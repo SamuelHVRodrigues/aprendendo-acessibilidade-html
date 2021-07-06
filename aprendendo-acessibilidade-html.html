@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Acessibilidade Landmark</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header role="banner">
+            <nav role="navigation" aria-level="main-navigation">
+                <ul role="menu">
+                    <li>
+                        <a href="#" role="menuitem">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#" role="menuitem">Conteúdos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis porro recusandae expedita quae quasi maiores veniam molestiae, ea magnam numquam corrupti dolores veritatis voluptatem molestias enim aperiam sint totam.</p>
+
+            <p lang="en">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nam nihil numquam dolore quibusdam, pariatur repellendus temporibus labore quod nostrum! Sapiente atque vitae itaque sint natus eum esse aut rem!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nemo, ex animi numquam, eos placeat amet tempora possimus iusto laudantium dolor expedita reprehenderit, inventore dolores. Eligendi odit earum voluptates architecto.</p>
+
+            <button aria-label="Acesse o site oficial para saber mais sobre os livros de Game of Thrones" aria-labelledby="gotsite">Saber mais</button>
+
+            <p id="gotsite">Site sobre Game of Thrones</p>
+
+            <form action="">
+                <label for="">E-mail</label>
+                <input type="email">
+
+                <label for="">Intresse</label>
+                <input type="radio" name="interesse" value="Vendas">
+                <label for="s">Vendas</label>
+
+                <input type="radio" name="interesse" value="Marketing">
+                <label for="m">Marketing</label>
+
+                <input type="radio" name="interesse" value="Programação">
+                <label for="l">Programação</label>
+
+                <input type="submit" value="inscrever">
+            </form>
+
+            <table summary="O ano de lançamento e a quantidade de páginas dos Livros de Game of Thrones">
+
+                <caption>Tabela 1: Informações sobre os Livros</caption>
+
+                <thead>
+                    <tr>
+                        <th abbr="Livro" scope="col">Nome do Livro</th>
+                        <th abbr="Lançamento" scope="col">Ano de Lançamento</th>
+                        <th abbr="Páginas" scope="col">Número de Páginas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">A Guerra dos Tronos</th>
+                        <td>1996</td>
+                        <td>591</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">A Fúria dos Reis</th>
+                        <td>1998</td>
+                        <td>653</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">A Tormenta de Espadas</th>
+                        <td>2000</td>
+                        <td>880</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">O Festim dos Corvos</th>
+                        <td>2005</td>
+                        <td>641</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">A Dança dos Dragões</th>
+                        <td>2011</td>
+                        <td>864</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Os Ventos do Inverno</th>
+                        <td colspan="2">Coming soon</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <img src="../acessibilidade-landmark/logo-got.jpg" alt="Logo Game of Thrones" title="Logo Game of Thrones" aria-labelledby="description-logo-got">
+
+            <p id="description-logo-got">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure tenetur dolore fugiat fugit aspernatur facilis cum adipisci corrupti ducimus quia recusandae, facere labore sequi officia eligendi temporibus harum iste!</p>
+
+        </main>
+    </body>
+
+    <footer role="contentinfo">
+        &copy; 2021 SamuelHVRodrigues
+    </footer>
+</html>
